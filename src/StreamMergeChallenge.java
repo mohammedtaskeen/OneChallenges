@@ -14,7 +14,7 @@ public class StreamMergeChallenge {
 		
 		Stream<String> finalStream = streamOfStreams.flatMap(s -> s)
 				.filter(s -> s.contains("in"));
-		//System.out.println(finalStream.);
+		System.out.println(finalStream.count());
 //		System.out.println(finalStream.count() + streamOfStreamsCount);
 	}
 
